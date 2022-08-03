@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+header {
+    background-color: #011434;
+    height: 75px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+    height: inherit;
+}
+
+.navbar-element {
+    /* border: rgb(148, 0, 0) solid 2px; */
+    color: white;
+    display: grid;
+    align-content: center;
+    font-size: 2rem;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* main */
+
+main {
+    padding: 16px;
+    height: 1fr;
+  }
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+.sticky + main {
+    padding-top: 102px;
+  }
+
+
+.logo {
+    position: absolute;
+    margin: 140px 0 0 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.small-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+}
+
+.small-icon-box {
+    display: block;
+    margin: auto;
+    margin: 10px auto 0 auto;
+    width: 200px;
+    text-align: right
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* background-color: aqua; */
+    width: 80%;
+    margin: 40px auto;
+    gap: 10px;
+}
+
+
+.card {
+    /* display: grid; */
+    border: black solid 2px;
+    border-radius: 6px;
+    grid-template-rows: auto;
+}
+
+.laptop-image {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+.card-paragraph {
+    display: block;
+    margin: auto;
+    margin: 10px auto 20px auto;
+    width: 200px;
+}
+
+.second-page-paragraph {
+    width: 70%;
+    margin: auto;
+}
+
+footer {
+    background-color: #011434;
+    height: 75px;
+    margin-top: auto;
+}
